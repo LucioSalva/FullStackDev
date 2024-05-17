@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.css">
     <title>Document</title>
 </head>
-
+<style>
+    .row > div{
+        background-color: #f2f2f2;
+        margin: 10px 0;
+        padding: 40px;
+    }
+</style>
 <body>
-
-    <div class="container bg-success ">
-        <div class="row h-50">
+    <!-- 
+Breakpoint	Infijo de clase	Dimensiones
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px -->
+<!-- el container es el contenedor principal, en el iran todas las filas y columnas -->
+<!-- con el container podemos centrar nuestra pag -->
+    <div class="container">
+        <!-- las filas (row) con grupos horizontales de columnas -->
+        <div class="row">
             <div class="col-12">
                 <h1>header</h1>
                 <p>12 columnas</p>
             </div>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-8">
                 <h2>Main</h2>
@@ -37,12 +51,14 @@
                         doloremque modi corrupti error voluptatum deleniti, esse aliquid corporis facere.
                 </p>    
             </div>
-            <div class="col-3 bg-secondary ">
+            <div class="col-1 bg-white"></div>
+            <div class="col-3">
                 <h2>Asaide</h2>
                 <p>3 columnas</p>
             </div>
         </div>
     </div>
+    
 
 
 
