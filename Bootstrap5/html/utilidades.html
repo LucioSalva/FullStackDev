@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.css">
+    <title>Utilidades para columnas</title>
+</head>
+<style>
+    .row{
+        background: #e8e8e8;
+        margin-top: 20px;        
+    }
+    .contenido{
+        background: #f2f2f2;
+        text-align: center;
+        padding: 10px;      
+        border: 1px solid #4d5061;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Reordemnamiento de columnas -->
+            <!-- order-1 al order-5 -->
+            <!-- .order-first -->
+            <!-- .order-last -->
+            <div class="contenido col order-4 order-md-1">Columna 1</div>
+            <div class="contenido col order-3 order-md-2">Columna 2</div>
+            <div class="contenido col order-2 order-md-3">Columna 3</div>
+            <div class="contenido col order-1 order-md-4">Columna 4</div>
+        </div>
+        <div class="row">
+            <!-- Offser mueve la columna atraves de las columnas no utilizadas -->
+            <div class="contenido col-3 offset-6 offset-md-3 ">Columna</div>
+        </div>
+        <div class="row">
+            <div class="contenido col-3 offset-2 offset-md-1">Columna 1</div>
+            <div class="contenido col-3 offset-4 offset-md-3">Columna 2</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="contenido col-auto">Columna 1</div>
+            <div class="contenido col-auto">Columna 2</div>
+        </div>
+        <div class="row">
+            <div class="contenido col-auto me-auto">Columna 1</div>
+            <div class="contenido col-auto">Columna 2</div>
+        </div>
+        <div class="row">
+            <div class="contenido col-auto">Columna 1</div>
+            <div class="contenido col-auto ms-auto">Columna 2</div>
+        </div>
+
+    </div>
+
+
+    <script src="/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

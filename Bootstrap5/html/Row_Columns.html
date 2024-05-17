@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.css">
+    <title>Row Columns</title>
+</head>
+<style>
+    .container{
+        margin-top: 20px;
+    }
+    .row{
+        background-color: #8e8e8e;
+    }
+    .col{
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background-color: #4d4d4d;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- estaclase de row-cols sireve para asignar el numero de columnas deseado sin tomar en cuenta existan  ejemplo 
+        se le asigno que fuera de 3 columnas con row-cols-3 sin tomar importancia de que existen 6-->
+        <div class="row row-cols-3">
+            <div class="col">Columna #1</div>
+            <div class="col">Columna #2</div>
+            <div class="col">Columna #3</div>
+            <div class="col">Columna #4</div>
+            <div class="col">Columna #5</div>
+            <div class="col">Columna #6</div>
+        </div>
+    </div>
+
+
+    <script src="/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
