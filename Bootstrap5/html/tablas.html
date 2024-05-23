@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+    <title>Tablas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Colores -->
+				<!-- Tenemos variantes disponibles para toda la tabla, toda una fila, o una celda -->
+				<!-- 
+					.table-primary
+					.table-secondary
+					.table-success
+					.table-danger
+					.table-warning
+					.table-info
+
+					.table-light
+					.table-dark
+				-->
+
+
+				<!-- Clases de tablas -->
+				<!-- Estas clases tambien estan disponbiles para los diferentes colores -->
+				<!-- 
+					.table-striped - Colorea en formato zebra para mejor lectura.
+					.table-hover - Colorea las filas sobre las que pasamos el cursor.
+					.table-bordered - Agrega bordes a la tabla.
+					.border-danger - Colorea el borde.
+					.table-borderless - Quita los bordes, incluso de las filas.
+					.table-sm - Hace una tabla mas compacta quitandole padding a las celdas
+				-->
+
+				<!-- Tabla Responsiva -->
+				<!-- Podemos encerrar la tabla en un div con la clase .table-responsive para hacerla responsiva -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-sm">
+                        <caption>
+                            Nadita Perro
+                        </caption>
+                        <thead>
+                            <tr class="table-dark">
+                                <th>Nombre de la Banda</th>
+                                <th>Genero</th>
+                                <th>Pais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dimmu Bongir</td>
+                                <td>Symphonic Black Metal</td>
+                                <td>Norway</td>
+                            </tr>
+                            <tr>
+                                <td>Satyricon</td>
+                                <td>Black Metal</td>
+                                <td>Norway</td>
+                            </tr>
+                            <tr>
+                                <td>Amon Amarth</td>
+                                <td>Melodic Death Metal</td>
+                                <td>Sweden</td>
+                            </tr>
+                            <tr>
+                                <td>Dark Tranquillity</td>
+                                <td>Melodic Death Metal</td>
+                                <td>Sweden</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="/Bootstrap5/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
