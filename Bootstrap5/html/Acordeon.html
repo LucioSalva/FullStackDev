@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css" />
+    <link rel="sty  lesheet" href="/Bootstrap5/css/bootstrap.css" />
+    <title>Acordeon</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <div class="accordion" id="Generos">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="GeneroOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Black Metal
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#Generos">
+                            <div class="accordion-body">
+                                El black metal es un subgénero extremo del heavy metal, surgido a mediados de los años
+                                ochenta. Se caracteriza por sus líricas con tintes Satánicos. Nace como expresión
+                                musical de los movimientos anticristianos que proliferan alrededor del continente
+                                europeo, cuyo mayor impulso fue a través de la quema de numerosas iglesias cristianas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="GeneroTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Death Metal
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="GeneroTwo"
+                            data-bs-parent="#Generos">
+                            <div class="accordion-body">
+                                El death metal es un subgénero extremo del heavy metal. Se caracteriza por utilizar
+                                voces guturales, guitarras con un uso excesivo de overdrive, afinaciones graves para sus
+                                instrumentos, percusión rápida (con un dominante uso del doble pedal), complejas
+                                estructuras musicales, además de técnicas poco ortodoxas para la composición de los
+                                riffs de guitarra. La temática del death metal abarca temas como las historias de
+                                terror, la religión, filosofía, asesinos en serie, canibalismo, torturas, entre otros.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="GeneroThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Viking/Folk Metal
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="GeneroThree"
+                            data-bs-parent="#Generos">
+                            <div class="accordion-body">
+                                El viking metal toma como base el Black Metal, y en menor medida el folk metal. Una
+                                banda de viking metal es toda aquella cuyas letras trataran los temas típicos de este
+                                estilo: las costumbres vikingas, los guerreros vikingos, los berserkers, el ásatrú... El
+                                viking metal tiene más elementos diferenciadores y comunes, entre ellos están el
+                                frecuente uso de teclado, el cual amortigua de cierta forma el crudo sonido del black
+                                metal tradicional ayudando así a que la atmósfera creada sea menos maligna que la del
+                                black metal. El viking metal usa tiempos más relajados, llegando a ser épicos en ciertos
+                                momentos, que el black metal y los "blast beats" (batería acelerada clásica del black
+                                metal, en castellano significaría "ritmo relámpago") son menos frecuentes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
