@@ -8,7 +8,7 @@
     <title>Formulario con Grid</title>
 </head>
 <body>
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5" style="background-color: lightslategrey;">
         <div class="row mt-5 mb-5">
             <div class="col">
                 <form action="">
@@ -23,20 +23,52 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12  col-md-6">
+                        <div class="col-sm-12 col-md-6 mb-3">
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="row">
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-sm-12 col-md-6 ">
                                     <label for="" class="form-label">Estado Civil</label>
                                     
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="estadoCivil" id="Soltero">
+                                        <label for="Soltero" class="form-check-label">Soltero(a)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="estadoCivil" id="Casado">
+                                        <label for="Casado" class="form-check-label">Casado(a)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="estadoCivil" id="Divorciado">
+                                        <label for="Divorciado" class="form-check-label">Divorciado(a)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="estadoCivil" id="Viudo">
+                                        <label for="Viudo" class="form-check-label">Viudo(a)</label>
+                                    </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
                                     <label for="" class="form-label">Pais</label>
-
+                                    <select name="Pais" id="Pais" class="form-select">
+                                        <option value="mexico">Mexico</option>
+                                        <option value="escocia">Escocia</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="canada">Canada</option>
+                                    </select>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div>
+                                <div class="form-check mb-2 mt-5">
+                                    <input type="checkbox" name="terminos" id="terminos" class="form-check-input"/>
+                                    <label for="terminos" class="form-check-label">Acepto terminos y condiciones</label>
+                                </div>
+                                <button type="submit" class="col-12 btn btn-success mb-4 mt-1">Enviar</button>
                             </div>
                         </div>
                     </div>
