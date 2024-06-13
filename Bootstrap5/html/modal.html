@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap5/css/bootstrap.min.css">
+    <link rel="sty  lesheet" href="/Bootstrap5/css/bootstrap.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row mt-5 mb-5">
+            <div class="col">
+                <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modal1">Modal 1</button>
+                <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true" aria-labelledby="labelmodal1">
+                    
+                    <!-- caja de dialogo -->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <!-- contenido de la caja -->
+                        <div class="modal-content">
+                            <!-- encabezado de la caja -->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Titulo</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                            </div>
+                            <!-- cuerpo de la caja -->
+                            <div class="modal-body">
+                                <h6>hola mundo</h6>
+                            </div>
+                            <!-- pie de pag de la caja -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">cerrar</button>
+                                <button type="button" class="btn btn-info">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modal2">Modal 2</button>
+                <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="labelmodal2" data-bs-backdrop="static">
+                    
+                    <!-- caja de dialogo -->
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <!-- contenido de la caja -->
+                        <div class="modal-content">
+                            <!-- encabezado de la caja -->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Titulo</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                            </div>
+                            <!-- cuerpo de la caja -->
+                            <div class="modal-body">
+                                <h6>hola mundo</h6>
+                                <p style="font-size: 1500px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora odio dicta eius a, nisi aut.</p>
+                            </div>
+                            <!-- pie de pag de la caja -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">cerrar</button>
+                                <button type="button" class="btn btn-info">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
