@@ -1,0 +1,22 @@
+<h3>Listado de Heroes</h3>
+
+<!-- ! diferncia de como se debe de usar de esta manera no hayn problema pero se genera un div un espacio por asi decir -->
+<div *ngIf="deletedHero; else naditaPara">
+  <h3>El Heroe que borraste fue: <small class="text-danger">{{ deletedHero }}</small></h3>
+</div>
+
+
+<!-- * y asi no ocupa un espacio por que no es un elemnto de HTML solo se agupa y nooo ocupa ningun espacio solo es el H3 -->
+<ng-template #naditaPara>
+  <h3>No ha borrado nada.</h3>
+</ng-template>
+
+<button *ngIf="heroNames.length > 0" (click)="removeHero()" class="btn btn-outline-danger">
+  Baorrar Ultimo Heroe
+</button>
+
+
+<ul class="list-group">
+  <li
+  *ngFor="let name of heroNames" class="list-group-item">{{ name }}</li>
+</ul>
